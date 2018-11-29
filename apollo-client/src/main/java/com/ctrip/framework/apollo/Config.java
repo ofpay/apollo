@@ -1,5 +1,8 @@
 package com.ctrip.framework.apollo;
 
+import com.ctrip.framework.apollo.enums.ConfigSourceType;
+import com.google.common.base.Function;
+
 import java.util.Date;
 import java.util.Locale;
 import java.util.Set;
@@ -173,8 +176,20 @@ public interface Config {
    *
    * @param listener the config change listener
    * @param interestedKeys the keys interested by the listener
+   *
+   * @since 1.0.0
    */
   public void addChangeListener(ConfigChangeListener listener, Set<String> interestedKeys);
+
+  /**
+   * Remove the change listener
+   *
+   * @param listener the specific config change listener to remove
+   * @return true if the specific config change listener is found and removed
+   *
+   * @since 1.1.0
+   */
+  public boolean removeChangeListener(ConfigChangeListener listener);
 
   /**
    * Return a set of the property names
@@ -182,4 +197,26 @@ public interface Config {
    * @return the property names
    */
   public Set<String> getPropertyNames();
+
+  /**
+   * Return the user-defined property value with the given key, or {@code defaultValue} if the key doesn't exist.
+   *
+   * @param key          the property name
+   * @param function     the transform {@link Function}. from String to user-defined type
+   * @param defaultValue the default value when key is not found or any error occurred
+   * @param <T>          user-defined type
+   * @return the property value
+   *
+   * @since 1.1.0
+   */
+  public <T> T getProperty(String key, Function<String, T> function, T defaultValue);
+
+  /**
+   * Return the config's source type, i.e. where is the config loaded from
+   *
+   * @return the config's source type
+   *
+   * @since 1.1.0
+   */
+  public ConfigSourceType getSourceType();
 }

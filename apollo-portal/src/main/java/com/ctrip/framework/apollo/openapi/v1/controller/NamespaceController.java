@@ -77,7 +77,7 @@ public class NamespaceController {
     }
 
     AppNamespace appNamespace = OpenApiBeanUtils.transformToAppNamespace(appNamespaceDTO);
-    AppNamespace createdAppNamespace = appNamespaceService.createAppNamespaceInLocal(appNamespace);
+    AppNamespace createdAppNamespace = appNamespaceService.createAppNamespaceInLocal(appNamespace, appNamespaceDTO.isAppendNamespacePrefix());
 
     publisher.publishEvent(new AppNamespaceCreationEvent(createdAppNamespace));
 

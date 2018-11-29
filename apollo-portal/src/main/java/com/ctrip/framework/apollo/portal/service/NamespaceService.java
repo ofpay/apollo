@@ -133,6 +133,10 @@ public class NamespaceService {
     return namespaceBOs;
   }
 
+  public List<NamespaceDTO> findNamespaces(String appId, Env env, String clusterName) {
+    return namespaceAPI.findNamespaceByCluster(appId, env, clusterName);
+  }
+
   public List<NamespaceDTO> getPublicAppNamespaceAllNamespaces(Env env, String publicNamespaceName, int page,
                                                                int size) {
     return namespaceAPI.getPublicAppNamespaceAllNamespaces(env, publicNamespaceName, page, size);

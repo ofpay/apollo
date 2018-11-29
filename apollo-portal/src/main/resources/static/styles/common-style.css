@@ -298,12 +298,16 @@ table th {
 .project-info th {
     text-align: right;
     padding: 4px 6px;
-    white-space: nowrap;
+    width: 5em;
 }
 
 .project-info td {
     border-bottom: 1px dotted gray;
     padding: 4px 6px;
+}
+
+.project-info td span {
+    margin-right: 5px;
 }
 
 #config-info {

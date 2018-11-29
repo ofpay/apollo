@@ -1,9 +1,10 @@
-![apollo-logo](apollo-portal/src/main/resources/static/img/logo-detail.png)
-================
+<img src="https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/logo/logo-simple.png" alt="apollo-logo" width="60%">
+
+# Apollo - A reliable configuration management system
 
 [![Build Status](https://travis-ci.org/ctripcorp/apollo.svg?branch=master)](https://travis-ci.org/ctripcorp/apollo)
 [![GitHub release](https://img.shields.io/github/release/ctripcorp/apollo.svg)](https://github.com/ctripcorp/apollo/releases)
-[![Maven Central Repo](https://img.shields.io/maven-central/v/com.ctrip.framework.apollo/apollo.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.ctrip.framework.apollo%22%20AND%20a%3A%22apollo-client%22)
+[![Maven Central Repo](https://img.shields.io/maven-central/v/com.ctrip.framework.apollo/apollo.svg)](https://mvnrepository.com/artifact/com.ctrip.framework.apollo/apollo-client)
 [![Coverage Status](https://coveralls.io/repos/github/ctripcorp/apollo/badge.svg?branch=master)](https://coveralls.io/github/ctripcorp/apollo?branch=master)
 <a href="https://scan.coverity.com/projects/ctripcorp-apollo">
   <img alt="Coverity Scan Build Status" src="https://img.shields.io/coverity/scan/8244.svg"/>
@@ -24,8 +25,8 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 
 本地快速部署请参见[Quick Start](https://github.com/ctripcorp/apollo/wiki/Quick-Start)
 
-公益演示环境（Demo）:
-- [140.143.100.23:8070](http://140.143.100.23:8070/)
+演示环境（Demo）:
+- [106.12.25.204:8070](http://106.12.25.204:8070/)
 - 账号/密码:apollo/admin
 
 # Screenshots
@@ -100,13 +101,26 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 
 # Presentation
   * [携程开源配置中心Apollo的设计与实现](http://www.itdks.com/dakalive/detail/3420)
-  * [Slides](http://techshow.ctrip.com/wp-content/uploads/2017/08/%E5%BC%80%E6%BA%90%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83Apollo%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-%E6%90%BA%E7%A8%8B%E5%AE%8B%E9%A1%BA.pdf)
+    * [Slides](https://myslide.cn/slides/10168)
+  * [配置中心，让微服务更『智能』](https://2018.qconshanghai.com/presentation/799)
+    * [Slides](https://myslide.cn/slides/10035)
 
 # Publication
   * [开源配置中心Apollo的设计与实现](http://www.infoq.com/cn/articles/open-source-configuration-center-apollo)
 
 # Support
-![tech-support-qq](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/tech-support-qq.png)
+<table>
+  <thead>
+    <th>Apollo配置中心技术支持②群<br />群号：904287263</th>
+    <th>Apollo配置中心技术支持①群<br />群号：375526581（已满）</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/tech-support-qq-2.png" alt="tech-support-qq-2"></td>
+      <td><img src="https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/tech-support-qq-1.png" alt="tech-support-qq-1"></td>
+    </tr>
+  </tbody>
+</table>
 
 # Contribution
   * Source Code: https://github.com/ctripcorp/apollo
@@ -202,3 +216,31 @@ The project is licensed under the [Apache 2 license](https://github.com/ctripcor
 ![新网银行](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/xwbank.png) 
 ![中旅安信云贷](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ctspcl.png) 
 ![美柚](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/meiyou.png) 
+![震坤行](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/zkh-logo.png) 
+![万谷盛世](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/wgss.png) 
+![铂涛旅行](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/plateno.png) 
+![乐心](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/lifesense.png) 
+![亿投传媒](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/reachmedia.png) 
+![股先生](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/guxiansheng.png) 
+![财学堂](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/caixuetang.png) 
+![4399](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/4399.png) 
+![汽车之家](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/autohome.png) 
+![面包财经](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/mbcaijing.png) 
+![虎扑](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/hoopchina.png) 
+![搜狐汽车](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/sohu-auto.png) 
+![量富征信](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/liangfuzhengxin.png) 
+![卖好车](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/maihaoche.png) 
+![中移物联网](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/zyiot.jpg) 
+![易车网](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/biauto.png) 
+![一药网](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/maiyaole.png) 
+![小影](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/xiaoying.png) 
+![彩贝壳](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/caibeike.png) 
+![YEELIGHT](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/yeelight.png) 
+![积目](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/itsgmu.png) 
+![极致医疗](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/acmedcare.png) 
+![金汇金融](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/jinhui365.png) 
+![久柏易游](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/900etrip.png) 
+![小麦铺](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/24xiaomai.png) 
+![搜款网](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/vvic.png) 
+![米庄理财](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/mizlicai.png) 
+![贝吉塔网络科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/bjt.png) 

@@ -99,6 +99,13 @@
                                 </span>
                                 </td>
                             </tr>
+                            <tr ng-show="missingNamespaces.length > 0">
+                                <th>缺失的Namespace:</th>
+                                <td>
+                                <span ng-repeat="namespace in missingNamespaces" ng-bind="namespace">
+                                </span>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
 
@@ -113,6 +120,12 @@
                     <a class="list-group-item" ng-show="missEnvs.length > 0" ng-click="createAppInMissEnv()">
                         <div class="row icon-text icon-plus-orange">
                             <p class="btn-title ng-binding">补缺环境</p>
+                        </div>
+                    </a>
+
+                    <a class="list-group-item" ng-show="missingNamespaces.length > 0" ng-click="createMissingNamespaces()">
+                        <div class="row icon-text icon-plus-orange">
+                            <p class="btn-title ng-binding">补缺Namespace</p>
                         </div>
                     </a>
 
@@ -352,9 +365,6 @@
 
 <!--lodash.js-->
 <script src="vendor/lodash.min.js" type="text/javascript"></script>
-
-<!--nicescroll-->
-<script src="vendor/jquery.nicescroll.min.js"></script>
 
 <!--angular-->
 <script src="vendor/angular/angular.min.js"></script>
