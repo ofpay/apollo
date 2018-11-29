@@ -2,6 +2,8 @@ package com.ctrip.framework.apollo.configservice;
 
 import com.ctrip.framework.apollo.biz.ApolloBizConfig;
 import com.ctrip.framework.apollo.common.ApolloCommonConfig;
+import com.ctrip.framework.apollo.configservice.service.eureka.enhancement.EurekaEnhanceConfiguration;
+import com.ctrip.framework.apollo.configservice.service.eureka.enhancement.EurekaServerStateListener;
 import com.ctrip.framework.apollo.metaservice.ApolloMetaServiceConfig;
 
 import org.springframework.boot.SpringApplication;
@@ -28,7 +30,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackageClasses = {ApolloCommonConfig.class,
     ApolloBizConfig.class,
     ConfigServiceApplication.class,
-    ApolloMetaServiceConfig.class})
+    ApolloMetaServiceConfig.class, EurekaEnhanceConfiguration.class})
 public class ConfigServiceApplication {
 
   public static void main(String[] args) throws Exception {
