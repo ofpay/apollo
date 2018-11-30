@@ -12,3 +12,7 @@ server:
 
 logging:
   file: /opt/logs/100003171/apollo-configservice.log
+notification:
+  dingtalk:
+    atMobiles: 13200000000
+    token: 34fd7f65e64e356221cae3570fc68e066262b697cfe7b75372218da8a30f91b9
