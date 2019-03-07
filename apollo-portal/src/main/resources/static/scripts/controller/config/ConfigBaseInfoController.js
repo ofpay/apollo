@@ -105,6 +105,10 @@ function ConfigBaseInfoController($rootScope, $scope, $window, $location, toastr
         AppService.find_miss_envs($rootScope.pageContext.appId).then(function (result) {
             $scope.missEnvs = AppUtil.collectData(result);
 
+            if ($scope.missEnvs.length > 0) {
+                toastr.warning("当前项目有环境缺失，请点击页面左侧『补缺环境』补齐数据");
+            }
+
             $scope.findMissingNamespaces();
         });
     }
@@ -116,10 +120,13 @@ function ConfigBaseInfoController($rootScope, $scope, $window, $location, toastr
     $scope.findMissingNamespaces = function () {
         $scope.missingNamespaces = [];
         // only check missing private namespaces when app exists in current env
-        if ($scope.missEnvs.indexOf($rootScope.pageContext.env) === -1) {
+        if ($rootScope.pageContext.env && $scope.missEnvs.indexOf($rootScope.pageContext.env) === -1) {
           AppService.find_missing_namespaces($rootScope.pageContext.appId, $rootScope.pageContext.env,
               $rootScope.pageContext.clusterName).then(function (result) {
                   $scope.missingNamespaces = AppUtil.collectData(result);
+                  if ($scope.missingNamespaces.length > 0) {
+                      toastr.warning("当前环境有Namespace缺失，请点击页面左侧『补缺Namespace』补齐数据");
+                  }
           });
         }
     };
